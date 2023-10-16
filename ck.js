@@ -18,7 +18,7 @@ BiliBili_11 = type=http-request, pattern=^https?:\/\/m.bilibili.com/$, script-pa
 TF信息获取 = type=http-request,pattern=^https:\/\/testflight\.apple\.com\/v3\/accounts/.*\/apps$,requires-body=0,script-path=https://github.com/w164955/Config/blob/main/JavaScript/TF_keys.js?raw=true
 #阿里云盘签到
 #阿里云盘签到-lowking-v1.0.0打开https://auth.aliyundrive.com/v2/account/token 获取 token
-https://auth.alipan.com/v2/account/token
+#https://auth.alipan.com/v2/account/token
 阿里云盘签到cookie = requires-body=1,type=http-response,pattern=https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
 
 
