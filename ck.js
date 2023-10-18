@@ -18,13 +18,11 @@ BiliBili_11 = type=http-request, pattern=^https?:\/\/m.bilibili.com/$, script-pa
 TF信息获取 = type=http-request,pattern=^https:\/\/testflight\.apple\.com\/v3\/accounts/.*\/apps$,requires-body=0,script-path=https://github.com/w164955/Config/blob/main/JavaScript/TF_keys.js?raw=true
 #松鼠
 松鼠ios获取token_22 = type=http-request, pattern=^https\:\/\/ios\.xiezhenge\.com\/user, script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/sxios.js, timeout=30
-#海信
-海信数据 = type=http-request,pattern=^https:\/\/sweixin\.hisense\.com\/ecrp\/member\/initMember,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/Hisense.js
-海信签到 = type=http-request,pattern=^https:\/\/cps\.hisense\.com\/customerAth\/activity-manage\/activityUser\/participate,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/Hisense.js
+
 
 
 
 
 [MITM]
-hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,webapi.qmai.cn,app.bilibili.com,m.bilibili.com,testflight.apple.com,ios.xiezhenge.com,sweixin.hisense.com,cps.hisense.com
+hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,webapi.qmai.cn,app.bilibili.com,m.bilibili.com,testflight.apple.com,ios.xiezhenge.com
 
