@@ -23,8 +23,11 @@ TF信息获取 = type=http-request,pattern=^https:\/\/testflight\.apple\.com\/v3
 海信签到 = type=http-request,pattern=^https:\/\/cps\.hisense\.com\/customerAth\/activity-manage\/activityUser\/participate,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/Hisense.js
 #云闪付
 http-request ^https:\/\/youhui.95516.com\/newsign\/api\/sharing_power\/showUserTask script-path=ysf.js, timeout=10, tag=云闪付签到获取token
+#建行生活
+建行数据 = type=http-request,pattern=^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js
+建行生活 = type=cron,cronexp=17 7 * * *,timeout=60,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,script-update-interval=0
 
 
 [MITM]
-hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,webapi.qmai.cn,app.bilibili.com,m.bilibili.com,testflight.apple.com,ios.songshuyouxi.com,sweixin.hisense.com,cps.hisense.com,youhui.95516.com
+hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,webapi.qmai.cn,app.bilibili.com,m.bilibili.com,testflight.apple.com,ios.songshuyouxi.com,sweixin.hisense.com,cps.hisense.com,youhui.95516.com,yunbusiness.ccb.com
 
