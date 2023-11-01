@@ -27,6 +27,12 @@ AllMyBatteries_3 = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.c
 gg_6 = type=http-response, pattern=^https:\/\/isi\..*\.g.*\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), requires-body=true, max-size=3145728, script-path=http://git.yycm.link/chxm1023/Rewrite/raw/main/gg.js, timeout=60, script-update-interval=0
 gg_7 = type=http-request, pattern=^https:\/\/isi\..*\.g.*\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=http://git.yycm.link/chxm1023/Rewrite/raw/main/gg.js, timeout=60, script-update-interval=0
 
+#Drops
+dr_21 = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/dr.js, timeout=60, script-update-interval=0
+dr_22 = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/dr.js, timeout=60, script-update-interval=0
+
+
+
 [MITM]
 
 hostname = %APPEND% backend.getdrafts.com,api.revenuecat.com,notability.com,www.xmind.*,buy.itunes.apple.com,isi.*.g*.com
