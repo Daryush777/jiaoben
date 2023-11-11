@@ -98,12 +98,11 @@ bdcloud_9 = type=http-response, pattern=^https?:\/\/pan\.baidu\.com\/(youai\/(us
 
 # 解锁个人中心
 TIDALHiFiPlusCrack = type=http-response, pattern=^https?:\/\/api\.tidal\.com\/v1\/users\/\d+\/subscription.+, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/TIDALHiFiPlusCrack.js, timeout=60, script-update-interval=0
-# 解锁音质
-TIDALMasterCrack = type=http-request, pattern=^https?:\/\/api\.tidal\.com\/v1\/tracks/\d+\/playbackinfopostpaywall.+, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/TIDAL/tidal.js, timeout=60, script-update-interval=0
+
 
 [MITM]
 
-hostname = %APPEND% *.aliyundrive.com,*.alipan.com,-broadcast.chat.bilibili.com,-*cdn*.biliapi.net,-*tracker*.biliapi.net,app.bilibili.com,api.live.bilibili.com,*.bilibili.com,*.bilibili.*,grpc.biliapi.net,*biliapi.net,*.cyapi.cn,adx.sogaha.cn,spclient.wg.spotify.com,*.wps.cn,edith.xiaohongshu.com,www.xiaohongshu.com,pages.xiaohongshu.com,referee.xiaohongshu.com,new.vip.weibo.cn,api.weibo.cn,weibointl.api.weibo.cn,-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,pan.baidu.com,api.tidal.com
+hostname = %APPEND% *.aliyundrive.com,*.alipan.com,-broadcast.chat.bilibili.com,-*cdn*.biliapi.net,-*tracker*.biliapi.net,app.bilibili.com,api.live.bilibili.com,*.bilibili.com,*.bilibili.*,grpc.biliapi.net,*biliapi.net,*.cyapi.cn,adx.sogaha.cn,spclient.wg.spotify.com,*.wps.cn,edith.xiaohongshu.com,www.xiaohongshu.com,pages.xiaohongshu.com,referee.xiaohongshu.com,new.vip.weibo.cn,api.weibo.cn,weibointl.api.weibo.cn,-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,pan.baidu.com
 
 
 [URL Rewrite]
