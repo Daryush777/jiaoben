@@ -29,7 +29,7 @@ http-request ^https:\/\/youhui.95516.com\/newsign\/api\/sharing_power\/showUserT
 #有赞
 SakuraCheckbox获取token_54 = type=http-response, pattern=https://h5.youzan.com/wscump/checkin/get_activity_by_yzuid_v2.json.+, script-path=https://gist.githubusercontent.com/Sliverkiss/585daf69a0a6c7243db8993f5394a124/raw/youzan.js, timeout=30
 #达美乐
-达乐美披萨获取token_17 = type=http-request, pattern=^https:\/\/game\.dominos\.com\.cn\/seafood\/game\/gameDone, script-path=dlm.js, requires-body=true, max-size=3145728, timeout=30
+http-request ^https:\/\/game\.dominos\.com\.cn\/seafood\/game\/gameDone script-path=dlm.js,requires-body=true, timeout=10, tag=达乐美披萨获取token
 
 
 [MITM]
