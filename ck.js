@@ -1,8 +1,6 @@
 [Script]
 #iios兑换苹果app
 iios获取token_23 = type=http-request, pattern=^https:\/\/www\.iios\.fun\/api\/(base|user\/info)$, script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/iios.js, timeout=30
-#美团
-meituan.cookie_4 = type=http-request, pattern=^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, timeout=60, script-update-interval=0
 #顺丰
 Rewrite: 顺丰速运 = type=http-request, pattern=^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js,requires-body=true
 #雨辰
