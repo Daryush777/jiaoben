@@ -118,5 +118,6 @@ GroupAuto = type=generic,timeout=10,script-path=https://raw.githubusercontent.co
 # 定时自动运行(可选需取消#注释) 30分钟一次,每天2到7点不运行
 #Cron_GroupAuto = type=cron, cronexp="*/30 0,1,7-23 * * *", timeout=10,wake-system=0,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/ProGroup.js, argument=tolerance=10&timecache=18&group=𝐏𝐫𝐨𝐱𝐲
 
-
+# Panel
+xianxing = type=generic, script-path=https://raw.githubusercontent.com/chengkongyiban/Surge/main/js/xianxing.js, timeout=60, argument=city=wz&cartype=新能源车&loo=本地车&displayxxregion=false
 
