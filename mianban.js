@@ -15,7 +15,7 @@ ProPing = script-name=ProPing,update-interval=120
 #NetlSp
 NetISP = script-name=NetISP,update-interval=43200
 
-xianxing = script-name=xianxing, update-interval=3600
+xianxing = script-name=xianxing,update-interval=3600
 
 # macOS不生效
 # > EDC_Surge-Panel
