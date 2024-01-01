@@ -8,7 +8,7 @@ ios游戏迷获取token_15 = type=http-request, pattern=^https:\/\/yuchen.tonghu
 #茅台
 茅台Token = type=http-request,pattern=^https:\/\/app\.moutai519\.com\.cn\/xhr\/front\/mall\/message\/unRead\/query,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/i-maotai.js
 #霸王茶姬
-霸王茶姬token = type=http-request,pattern=^https?:\/\/webapi\.qmai\.cn\/web\/catering\/integral\/sign\/signIn,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj_token.js
+霸王茶姬获取token = type=http-request, pattern=^https:\/\/qmwebapi\.qmai\.cn\/web\/catering2-apiserver\/crm\/points-info, script-path=https://gist.githubusercontent.com/Sliverkiss/4984f7f34d6df8bcdd1e13ecac4bba51/raw/bwcj.js, timeout=10
 #bilibili
 BiliBili_10 = type=http-request, pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\?, script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js, timeout=60, script-update-interval=0
 BiliBili_11 = type=http-request, pattern=^https?:\/\/m.bilibili.com/$, script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js, timeout=60, script-update-interval=0
