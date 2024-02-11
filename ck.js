@@ -32,7 +32,9 @@ aliyun = type=http-request, pattern=^https:\/\/(auth|aliyundrive)\.alipan\.com\/
 星星充电Cookie = type=http-request,pattern=^https:\/\/gateway\.starcharge\.com\/apph5\/xcxApiV2\/wechat\/starPoint\/sign,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/shengetui/qx/main/xxcd.js
 #蜜雪冰城
 蜜雪冰城获取token = type=http-request,pattern=^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info,requires-body=0,max-size=0,script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js
+#卫岗
+活力伊利token = type=http-request, pattern=^https:\/\/ttdprod-mp\.4008618618\.com\/mallbusiness\/ums\/common\/getMemberInfo, script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/task/wgttd.js
 
 [MITM]
-hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,qmwebapi.qmai.cn,app.bilibili.com,m.bilibili.com,testflight.apple.com,ios.songshuyouxi.com,sweixin.hisense.com,cps.hisense.com,youhui.95516.com,yunbusiness.ccb.com,apis.folidaymall.com,h5.youzan.com,auth.alipan.com,auth.aliyundrive.com,gateway.starcharge.com,mxsa.mxbc.net
+hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,qmwebapi.qmai.cn,app.bilibili.com,m.bilibili.com,testflight.apple.com,ios.songshuyouxi.com,sweixin.hisense.com,cps.hisense.com,youhui.95516.com,yunbusiness.ccb.com,apis.folidaymall.com,h5.youzan.com,auth.alipan.com,auth.aliyundrive.com,gateway.starcharge.com,mxsa.mxbc.net,ttdprod-mp.4008618618.com
 
