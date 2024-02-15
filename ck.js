@@ -36,7 +36,10 @@ aliyun = type=http-request, pattern=^https:\/\/(auth|aliyundrive)\.alipan\.com\/
 活力伊利token = type=http-request, pattern=^https:\/\/ttdprod-mp\.4008618618\.com\/mallbusiness\/ums\/common\/getMemberInfo, script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/task/wgttd.js
 #永辉生活
 yhss_v2 = type=http-request, pattern=^https:\/\/api\.yonghuivip\.com\/web\/coupon\/credit\/coupon\/getcreditcouponpageinfo\/v2, script-path=https://gist.githubusercontent.com/Sliverkiss/39c1ea412db7229c5ccb5bf612e067e3/raw/yhss_v2.js, timeout=60
+#米其林
+米其林俱乐部token = type=http-request, pattern=^https:\/\/ulp\.michelin\.com\.cn\/bff\/profile, script-path=https://gist.githubusercontent.com/Sliverkiss/49c5d5176cad6e47919ffe058606ed0d/raw/michelin.js, timeout=10
+
 
 [MITM]
-hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,qmwebapi.qmai.cn,app.bilibili.com,m.bilibili.com,testflight.apple.com,ios.songshuyouxi.com,sweixin.hisense.com,cps.hisense.com,youhui.95516.com,yunbusiness.ccb.com,apis.folidaymall.com,h5.youzan.com,auth.alipan.com,auth.aliyundrive.com,gateway.starcharge.com,mxsa.mxbc.net,ttdprod-mp.4008618618.com,api.yonghuivip.com
+hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,qmwebapi.qmai.cn,app.bilibili.com,m.bilibili.com,testflight.apple.com,ios.songshuyouxi.com,sweixin.hisense.com,cps.hisense.com,youhui.95516.com,yunbusiness.ccb.com,apis.folidaymall.com,h5.youzan.com,auth.alipan.com,auth.aliyundrive.com,gateway.starcharge.com,mxsa.mxbc.net,ttdprod-mp.4008618618.com,api.yonghuivip.com,ulp.michelin.com.cn
 
