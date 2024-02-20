@@ -38,7 +38,8 @@ yhss_v2 = type=http-request, pattern=^https:\/\/api\.yonghuivip\.com\/web\/coupo
 #哔哩哔哩
 B站Cookie(APP) = type=http-request, pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\?, script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js
 B站Cookie(网页) = type=http-request, pattern=^https?:\/\/m\.bilibili\.com/$, script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js
-
+#牛奶
+植白说获取token = type=http-request, pattern=^https:\/\/www\.kozbs\.com\/demo\/wx\/home\/signDay\?userId=.+, script-path=https://gist.githubusercontent.com/Sliverkiss/3bd5650dab5194261d9426869ae8cd38/raw/zbs.js, timeout=10
 [MITM]
-hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,qmwebapi.qmai.cn,testflight.apple.com,ios.songshuyouxi.com,sweixin.hisense.com,cps.hisense.com,youhui.95516.com,yunbusiness.ccb.com,apis.folidaymall.com,h5.youzan.com,auth.alipan.com,auth.aliyundrive.com,gateway.starcharge.com,mxsa.mxbc.net,ttdprod-mp.4008618618.com,api.yonghuivip.com,ulp.michelin.com.cn,app.bilibili.com, m.bilibili.com
+hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,qmwebapi.qmai.cn,testflight.apple.com,ios.songshuyouxi.com,sweixin.hisense.com,cps.hisense.com,youhui.95516.com,yunbusiness.ccb.com,apis.folidaymall.com,h5.youzan.com,auth.alipan.com,auth.aliyundrive.com,gateway.starcharge.com,mxsa.mxbc.net,ttdprod-mp.4008618618.com,api.yonghuivip.com,ulp.michelin.com.cn,app.bilibili.com, m.bilibili.com,www.kozbs.com
 
