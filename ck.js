@@ -40,6 +40,11 @@ B站Cookie(APP) = type=http-request, pattern=^https?:\/\/app\.bilibili\.com\/x\/
 B站Cookie(网页) = type=http-request, pattern=^https?:\/\/m\.bilibili\.com/$, script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js
 #牛奶
 植白说获取token = type=http-request, pattern=^https:\/\/www\.kozbs\.com\/demo\/wx\/home\/signDay\?userId=.+, script-path=https://gist.githubusercontent.com/Sliverkiss/3bd5650dab5194261d9426869ae8cd38/raw/zbs.js, timeout=10
+#中国人保
+zgrb = type=http-request, pattern=^https:\/\/zgrb\.epicc\.com\.cn\/G-BASE\/a\/user\/login\/thirdPartyLogin\/v1, script-path=https://gist.githubusercontent.com/Sliverkiss/c2ddf6840d8a9afb45ee407326e7b86d/raw/zgrb.js, requires-body=true, max-size=-1, timeout=60
+
+
+
 [MITM]
-hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,qmwebapi.qmai.cn,testflight.apple.com,ios.songshuyouxi.com,sweixin.hisense.com,cps.hisense.com,youhui.95516.com,yunbusiness.ccb.com,apis.folidaymall.com,h5.youzan.com,auth.alipan.com,auth.aliyundrive.com,gateway.starcharge.com,mxsa.mxbc.net,ttdprod-mp.4008618618.com,api.yonghuivip.com,ulp.michelin.com.cn,app.bilibili.com, m.bilibili.com,www.kozbs.com
+hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,qmwebapi.qmai.cn,testflight.apple.com,ios.songshuyouxi.com,sweixin.hisense.com,cps.hisense.com,youhui.95516.com,yunbusiness.ccb.com,apis.folidaymall.com,h5.youzan.com,auth.alipan.com,auth.aliyundrive.com,gateway.starcharge.com,mxsa.mxbc.net,ttdprod-mp.4008618618.com,api.yonghuivip.com,ulp.michelin.com.cn,app.bilibili.com, m.bilibili.com,www.kozbs.com,zgrb.epicc.com.cn
 
