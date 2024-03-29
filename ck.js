@@ -27,8 +27,7 @@ SakuraCheckbox获取token_54 = type=http-response, pattern=https://h5.youzan.com
 aliyun = type=http-request, pattern=^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token, script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, max-size=-1, timeout=60
 #星星充电
 星星充电Cookie = type=http-request,pattern=^https:\/\/gateway\.starcharge\.com\/apph5\/xcxApiV2\/wechat\/starPoint\/sign,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/shengetui/qx/main/xxcd.js
-#蜜雪冰城
-蜜雪冰城获取token = type=http-request,pattern=^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info,requires-body=0,max-size=0,script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js
+
 #卫岗
 活力伊利token = type=http-request, pattern=^https:\/\/ttdprod-mp\.4008618618\.com\/mallbusiness\/ums\/common\/getMemberInfo, script-path=https://raw.githubusercontent.com/anyehttp/quantumult-x/main/task/wgttd.js
 #永辉生活
@@ -46,5 +45,5 @@ zgrb = type=http-request, pattern=^https:\/\/zgrb\.epicc\.com\.cn\/G-BASE\/a\/us
 
 
 [MITM]
-hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,qmwebapi.qmai.cn, webapi.qmai.cn,testflight.apple.com,ios.songshuyouxi.com,sweixin.hisense.com,cps.hisense.com,youhui.95516.com,yunbusiness.ccb.com,apis.folidaymall.com,h5.youzan.com,auth.alipan.com,auth.aliyundrive.com,gateway.starcharge.com,mxsa.mxbc.net,ttdprod-mp.4008618618.com,api.yonghuivip.com,ulp.michelin.com.cn,app.bilibili.com, m.bilibili.com,www.kozbs.com,zgrb.epicc.com.cn
+hostname = %APPEND% www.iios.fun,i.meituan.com,ccsp-egmas.sf-express.com,yuchen.tonghuaios.com,app.moutai519.com.cn,qmwebapi.qmai.cn, webapi.qmai.cn,testflight.apple.com,ios.songshuyouxi.com,sweixin.hisense.com,cps.hisense.com,youhui.95516.com,yunbusiness.ccb.com,apis.folidaymall.com,h5.youzan.com,auth.alipan.com,auth.aliyundrive.com,gateway.starcharge.com,ttdprod-mp.4008618618.com,api.yonghuivip.com,ulp.michelin.com.cn,app.bilibili.com, m.bilibili.com,www.kozbs.com,zgrb.epicc.com.cn
 
