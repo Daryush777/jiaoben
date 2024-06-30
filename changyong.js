@@ -99,7 +99,7 @@ TIDALHiFiPlusCrack = type=http-response, pattern=^https?:\/\/api\.tidal\.com\/v1
 
 [MITM]
 
-hostname = %APPEND% *.aliyundrive.com,*.alipan.com,-broadcast.chat.bilibili.com,-*cdn*.biliapi.net,-*tracker*.biliapi.net,app.bilibili.com,api.live.bilibili.com,*.bilibili.com,*.bilibili.*,grpc.biliapi.net,*biliapi.net,*.cyapi.cn,adx.sogaha.cn,spclient.wg.spotify.com,*.wps.cn,edith.xiaohongshu.com,www.xiaohongshu.com,pages.xiaohongshu.com,referee.xiaohongshu.com,new.vip.weibo.cn,api.weibo.cn,weibointl.api.weibo.cn,-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,pan.baidu.com
+hostname = %APPEND% *.aliyundrive.com,*.alipan.com,-broadcast.chat.bilibili.com,-*cdn*.biliapi.net,-*tracker*.biliapi.net,app.bilibili.com,api.live.bilibili.com,*.bilibili.com,*.bilibili.*,grpc.biliapi.net,*biliapi.net,*.cyapi.cn,adx.sogaha.cn,spclient.wg.spotify.com,*.wps.cn,edith.xiaohongshu.com,www.xiaohongshu.com,pages.xiaohongshu.com,referee.xiaohongshu.com,new.vip.weibo.cn,api.weibo.cn,weibointl.api.weibo.cn,pan.baidu.com
 
 
 [URL Rewrite]
