@@ -89,10 +89,6 @@ wb_23 = type=http-response, pattern=https:\/\/new\.vip\.weibo\.cn\/aj\/appicon\/
 wb_24 = type=http-response, pattern=https:\/\/api\.weibo\.cn\/device\/get, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wb.js, timeout=60, script-update-interval=0
 wb_25 = type=http-response, pattern=https:\/\/weibointl\.api\.weibo\.cn\/portal\.php, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wb.js, timeout=60, script-update-interval=0
 
-#YouTube
-# ======= 视频PIP|后台播放|瀑布流|搜索页|播放页|短视频|贴片广告  ======= #
-youtube.request.beta_17 = type=http-request, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence)\?, requires-body=true, max-size=3145728, binary-body-mode=true, script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.request.beta.js, timeout=60, script-update-interval=0
-youtube.response.beta_18 = type=http-response, pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\?, requires-body=true, max-size=3145728, binary-body-mode=true, script-path=https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/dist/youtube.response.beta.js, timeout=60, script-update-interval=0
 
 #百度云盘
 bdcloud_9 = type=http-response, pattern=^https?:\/\/pan\.baidu\.com\/(youai\/(user\/.+\/getminfo|membership\/.+\/adswitch)|(rest\/.+\/membership\/user|act\/.+\/(bchannel|welfare)\/list|api\/usercfg)), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/bdcloud.js, timeout=60, script-update-interval=0
@@ -113,9 +109,7 @@ hostname = %APPEND% *.aliyundrive.com,*.alipan.com,-broadcast.chat.bilibili.com,
 # ～ BiliBili_哔哩哔哩_屏蔽DefaultWord@ddgksf2013
 ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.interface\.v1\.Search\/Default - reject
 
-#YouTube
-# ======= 视频广告请求 ======= #
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 302
+
 
 
 
@@ -147,9 +141,6 @@ hostname = %APPEND% *.aliyundrive.com,*.alipan.com,-broadcast.chat.bilibili.com,
 # > 小红书_启动引导@ddgksf2013
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/guide\/home_guide data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
-#YouTube
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
-# ======= 通用广告请求 ======= #
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+
+
+
